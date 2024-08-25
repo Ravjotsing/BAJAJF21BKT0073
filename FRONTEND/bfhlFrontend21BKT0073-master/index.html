@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21BKT0073</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="jsonInput" placeholder="Enter JSON">
+        <button id="submitButton">Submit</button>
+        <p id="errorMessage" class="error"></p>
+
+        <div id="responseContainer" style="display: none;">
+            <div class="multi-select-container">
+                <div class="options-box">
+                    <label>Available Options:</label>
+                    <div id="availableOptions" class="options-container">
+                        <div class="option-box" data-value="alphabets">Alphabets</div>
+                        <div class="option-box" data-value="numbers">Numbers</div>
+                        <div class="option-box" data-value="highest_alphabet">Highest Alphabet</div>
+                    </div>
+                </div>
+                <div class="options-box">
+                    <label>Selected Options:</label>
+                    <div id="selectedOptions" class="options-container"></div>
+                </div>
+            </div>
+            <button id="showResponseButton">Show Response</button>
+
+            <div id="responseOutput"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
