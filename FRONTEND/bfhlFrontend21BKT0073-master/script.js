@@ -13,7 +13,7 @@ document.getElementById('submitButton').addEventListener('click', function() {
             throw new Error('Invalid JSON structure');
         }
 
-        fetch('https://bfhlbackend.onrender.com/bfhl', {
+        fetch('https://bajajfin-21-bkt-0073.vercel.app/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
